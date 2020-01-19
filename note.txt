@@ -1,5 +1,4 @@
-from typing import *
-
+1.两数之和
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -11,8 +10,3 @@ class Solution:
                 return [nums_hash[dif], i]
             nums_hash[nums[i]] = i
         return []
-
-
-if __name__ == "__main__":
-    s = Solution()
-    s.twoSum([2, 7, 11, 15], 9)
