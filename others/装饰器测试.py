@@ -1,14 +1,14 @@
 def decorator(func):
-    def wrapper():
-        func()
+    def wrapper(*args):
         print('decorator done.')
+        print(sum(args))
 
     return wrapper
 
 
 @decorator
-def f():
+def f(a, b):
     print('this is f.')
 
 
-f()
+f(1, 2)
